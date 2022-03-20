@@ -1,0 +1,581 @@
+:root {
+  --bg-color: #ffffff;
+  --bg-color1: #bbbbbb;
+  --bg-color2: #000000;
+  --bg-color3: #1c8adb;
+  --bg-color4: #008000;
+
+  --primary-color: #e52f6e;
+  --font: "Verdana", sans-serif;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: end;
+}
+li {
+  margin-right: 50px;
+  display: flex;
+  list-style: none;
+}
+body {
+  font-family: var(--font);
+  background-color: var(--bg-color);
+}
+
+h2,
+p {
+  font-family: var(--font);
+}
+
+/* Image Setting */
+img {
+  height: 200px;
+  width: 200px;
+  margin-top: 20px;
+  margin-bottom: 10px;
+  float: left;
+  object-fit: cover;
+}
+
+.logoimage {
+  height: 150px;
+  width: 150px;
+  padding: 2rem;
+  margin-top: 12px;
+  position: relative;
+  top: 1;
+  object-fit: cover;
+}
+/* Anchor Setting */
+a {
+  color: var(--bg-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+a:link {
+  text-decoration: none;
+  color: aliceblue;
+}
+
+a:visited {
+  color: var(--bg-color3);
+}
+
+a:active {
+  color: #ffff00;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: var(--bg-color4);
+  background-color: var(--bg-color);
+  height: 60px;
+  width: 120px;
+}
+
+header {
+  background-color: var(--primary-color);
+  display: flex;
+  text-align: center;
+  height: 100px;
+  width: 100%;
+  position: sticky;
+  top: 0;
+  justify-content: space-between;
+  align-items: center;
+}
+
+header a {
+  color: var(--bg-color);
+  text-decoration: none;
+}
+
+footer {
+  background-color: var(--primary-color);
+  text-align: center;
+  height: 10vh;
+  margin-bottom: 10px;
+}
+.socialmedia {
+  margin-left: 1rem;
+  align-items: center;
+}
+
+.project {
+  height: 85vh;
+  color: var(--bg-color2);
+  background-color: var(--bg-color1);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 1rem;
+  display: flex;
+  align-content: center;
+  scroll-margin-top: 5rem;
+  position: relative;
+  top: 0;
+  z-index: -2;
+}
+p {
+  margin-top: 15px;
+}
+
+.skills {
+  height: 50vh;
+  color: var(--bg-color2);
+  background-color: var(--bg-color1);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 1rem;
+  scroll-margin-top: 5rem;
+}
+
+.about {
+  height: 50vh;
+  color: var(--bg-color2);
+  background-color: var(--bg-color);
+  margin-top: 40px;
+  margin-bottom: 40px;
+  padding: 1rem;
+  scroll-margin-top: 5rem;
+  line-height: 1.3;
+}
+.contact {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-color: var(--bg-color3);
+  scroll-margin-top: 6rem;
+  height: 90vh;
+}
+
+.gallery {
+  height: 125vh;
+  color: var(--bg-color2);
+  background-color: var(--bg-color);
+  margin-top: 40px;
+  margin-bottom: 3px;
+  padding: 1rem;
+}
+.banner {
+  background: url("pc2.jpeg") no-repeat fixed center center/cover;
+  height: 50vh;
+  position: relative;
+  z-index: -1;
+}
+.box {
+  height: 50px;
+  width: 450px;
+  background-color: var(--bg-color4);
+  animation-name: myAnimations;
+  animation-duration: 10s;
+  animation-iteration-count: 5;
+  position: relative;
+}
+.box:hover {
+  animation-play-state: running;
+}
+.box1 {
+  height: 200px;
+  width: 200px;
+  margin-top: 40px;
+  margin-right: 150px;
+  padding: 3rem;
+  border: 1px solid transparent;
+  object-fit: cover;
+  border-radius: 20px;
+}
+
+/* Object-fit helps us to not to picture squeexzed */
+.box1 img {
+  object-fit: cover;
+  object-position: top;
+  border-radius: 5px;
+  filter: opacity(100%);
+  box-shadow: 10px 5px 5px var(--bg-color3);
+  transition: all 2s;
+}
+
+.box1 img:hover {
+  height: 300px;
+  border: 10px solid var(--bg-color3);
+  filter: saturate(50%);
+}
+
+.box-text {
+  width: 200px;
+  text-align: center;
+  display: block;
+  background-color: transparent;
+  border: 1px solid transparent;
+}
+
+@keyframes myAnimations {
+  from {
+    left: 0px;
+  }
+  to {
+    left: 100%;
+  }
+}
+
+.banner h2 {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.project,
+.about,
+.skills,
+.gallery,
+.contact h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  text-align: center;
+  text-decoration: none;
+}
+
+.formsubmit {
+  margin-top: 50px;
+  margin-bottom: 25px;
+  background-color: var(--bg-color1);
+  padding-bottom: 3rem;
+  text-align: center;
+  display: flexbox;
+  height: 70vh;
+  align-items: center;
+}
+
+label {
+  padding: 12px;
+  margin: 10px 0;
+}
+
+button {
+  background-color: var(--bg-color3);
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 5px;
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  cursor: pointer;
+  color: var(--bg-color);
+}
+
+/* Sizing the input fields */
+input,
+textarea {
+  border-radius: 20px;
+  width: 20%;
+  padding: 12px;
+  margin: 10px 0;
+  border: 1px solid #999;
+  outline: none;
+  font-family: var(--font);
+}
+.send {
+  width: 10%;
+}
+
+textarea {
+  justify-content: center;
+}
+
+.animateskill {
+  width: 500px;
+  background-color: var(--bg-color2);
+  height: 33vh;
+  margin: 30px auto;
+  color: var(--bg-color);
+  padding: 20px;
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.animate li {
+  margin-top: 20px;
+  margin-bottom: 0px;
+  padding: 10px;
+  list-style: none;
+}
+.material-icons {
+  margin-top: 10px;
+  margin-bottom: 10px;
+  font-size: 1rem;
+}
+
+.skillbar {
+  background-color: var(--bg-color);
+  display: block;
+  height: 20px;
+  width: 80%;
+  border: 1px solid rgba(0, 0, 0, 0.3);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 14px 3px rgba(0, 0, 0, 0.25), 0 1px 3px rgba(0, 0, 0, 0.22);
+}
+
+.skillbar:hover {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+.skillbar span {
+  height: 20px;
+  float: left;
+  background: linear-gradient(
+    135deg,
+    rgba(236, 0, 140, 1) 0%,
+    rgba(252, 103, 103, 1) 100%
+  );
+}
+
+.html {
+  width: 70%;
+  animation: html 3s;
+  text-align: right;
+  color: var(--bg-color2);
+}
+.css {
+  width: 60%;
+  animation: css 3s;
+  text-align: right;
+  color: var(--bg-color2);
+}
+.javascript {
+  width: 60%;
+  animation: javascript 3s;
+  text-align: right;
+  color: var(--bg-color2);
+}
+.python {
+  width: 70%;
+  animation: python 3s;
+  text-align: right;
+  color: var(--bg-color2);
+}
+
+@keyframes html {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+@keyframes css {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes javascript {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 60%;
+  }
+}
+
+@keyframes python {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 70%;
+  }
+}
+
+/* grid css */
+
+.gridcontainer {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-auto-rows: 100px 300px;
+  grid-gap: 10px;
+}
+
+.gallery-item {
+  width: 100%;
+  height: 100%;
+}
+
+.gallery-item .image {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+
+/*Centre of the image  show by object position 50 percent 50 percent*/
+.gallery-item .image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: 50% 50%;
+  transition: 0.5s ease-in-out;
+  cursor: pointer;
+  overflow: hidden;
+}
+
+.gallery-item:hover .image img {
+  transform: scale(2);
+}
+
+/* opacity helps to  */
+
+.gallery-item .bottomline {
+  opacity: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: var(--bg-color);
+  font-size: 25px;
+  pointer-events: none;
+  z-index: 4;
+  transition: 0.3s ease-in-out;
+}
+
+.gallery-item:hover .bottomline {
+  opacity: 1;
+  padding: 1rem;
+  width: 100%;
+  animation: move-down 0.3s linear;
+}
+
+/* For grid row and column spaning */
+.w-3 {
+  grid-column: span 3;
+}
+
+.w-2 {
+  grid-column: span 2;
+}
+
+.b-2 {
+  grid-row: span 2;
+}
+
+/* Grid Text Animation */
+
+@keyframes move-down {
+  0% {
+    top: 10%;
+  }
+
+  50% {
+    top: 35%;
+  }
+
+  100% {
+    top: 50%;
+  }
+}
+
+@media (max-width: 576px) {
+  #mobileButton {
+    display: block;
+    background-color: transparent;
+    border: none;
+    color: var(--bg-color);
+  }
+  nav ul {
+    display: none;
+  }
+
+  nav.navigation ul {
+    background-color: var(--bg-color3);
+    position: absolute;
+    left: 0;
+    top: 85px;
+    width: 100%;
+    display: block;
+  }
+
+  nav.navigation ul li {
+    display: block;
+  }
+
+  nav.navigation a {
+    color: #333;
+    display: block;
+  }
+
+  .project {
+    display: block;
+    height: 150vh;
+    width: 100%;
+  }
+
+  .about,
+  .skills,
+  .gallery,
+  .contact,
+  .animateskill,
+  .skillbar,
+  .html,
+  .css,
+  .javascript,
+  .python {
+    width: 100%;
+  }
+
+  input,
+  textarea,
+  label {
+    width: 40%;
+  }
+  button {
+    width: 30%;
+  }
+
+  .gallery-item {
+    width: 75%;
+    height: 75%;
+  }
+
+  .send {
+    width: 30%;
+  }
+
+  .socialmedia {
+    margin-left: 1rem;
+    align-items: center;
+  }
+
+  .box-text,
+  .box1 {
+    width: 10%;
+    padding-left: 1.5rem;
+  }
+  .box1 img {
+    display: block;
+    margin-right: 12px;
+    object-fit: cover;
+    object-position: top;
+    border-radius: 5px;
+    filter: opacity(100%);
+    box-shadow: none;
+    transition: none;
+    padding-left: 1rem;
+  }
+  .box {
+    display: none;
+  }
+}

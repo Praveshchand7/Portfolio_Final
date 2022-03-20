@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="mystyle.css" />
+    <link rel="icon" href="jpg-icon.png" type="image/x-icon" />
+    <link
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet"
+    />
+
+    <title>Portfolio_Project</title>
+  </head>
+  <body>
+    <header class="fixed-header">
+      <div class="logo">
+        <img class="logoimage" src="Chand.png" alt="logo-pic" />
+      </div>
+      <nav class="navigation">
+        <button id="mobileButton">
+          <span class="material-icons">menu</span>
+        </button>
+        <ul>
+          <li><a href="#Home"> Project </a></li>
+          <li><a href="#About"> About Me</a></li>
+          <li><a href="#Skills"> Skills </a></li>
+          <li><a href="#BCH"> BCH </a></li>
+          <li><a href="#Contact">Contact </a></li>
+          <li>
+            <a href="gallery.html"> Gallery </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+    <main>
+      <section id="Banner" class="banner">
+        <h2 class="bannertext">Welcome To my Portfolio Project</h2>
+        <div class="box">
+          <p>"Have no fear of perfection -- you'll never reach it."</p>
+        </div>
+      </section>
+      <section id="Home" class="project">
+        <h2>Project</h2>
+
+        <div class="box1">
+          <img src="html.jpeg" alt="pic4" />
+          <p>
+            HTML/CSS project <br />
+            <a href=""> More</a>
+          </p>
+        </div>
+        <div class="box1">
+          <img src="javascript.jpeg" alt="pic4" />
+          <p>
+            JavaScript project <br />
+            <a href=""> More</a>
+          </p>
+        </div>
+        <div class="box1">
+          <img src="design.jpeg" alt="pic4" />
+          <p>
+            Design & Prototyping project <br />
+            <a href="">More</a>
+          </p>
+        </div>
+      </section>
+
+      <section id="About" class="about">
+        <h2>About</h2>
+        <img src="copypic.jpg" alt="Picture" />
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus a
+          delectus inventore placeat beatae nemo hic ratione nulla iste
+          cupiditate, magnam nam excepturi ipsam eos obcaecati veritatis illo in
+          nostrum!Lorem500
+        </p>
+      </section>
+      <section id="Skills" class="skills">
+        <h2>Skills</h2>
+
+        <div class="animateskill">
+          <ul>
+            <li>
+              <span class="material-icons"
+                ><i class="fa-brands fa-html5"></i
+              ></span>
+              <span class="skillbar"><span class="html">70%</span> </span>
+            </li>
+            <li>
+              <span class="material-icons"
+                ><i class="fa-brands fa-css3"></i
+              ></span>
+              <span class="skillbar"><span class="css">60%</span></span>
+            </li>
+            <li>
+              <span class="material-icons"
+                ><i class="fa-brands fa-js"></i
+              ></span>
+              <span class="skillbar"
+                ><span class="javascript"> 60% </span></span
+              >
+            </li>
+            <li>
+              <span class="material-icons"
+                ><i class="fa-brands fa-python"></i
+              ></span>
+              <span class="skillbar"><span class="python">70%</span></span>
+            </li>
+          </ul>
+        </div>
+      </section>
+      <section id="Contact" class="contact">
+        <div><h2>Contact Me</h2></div>
+        <form class="formsubmit">
+          <label>First name</label> <br />
+          <input type="text" class="input-box" placeholder="First name" /><br />
+
+          <label>Last name</label> <br />
+          <input type="text" class="input-box" placeholder="Last name" /><br />
+
+          <label>Email </label> <br />
+          <input
+            type="email"
+            class="input-box"
+            placeholder="Enter an email"
+          /><br />
+
+          <label>Message </label> <br />
+          <textarea class="message" placeholder="Message Me"></textarea>
+          <br />
+
+          <input class="send" type="Submit" value="Send Me" /><br />
+        </form>
+      </section>
+    </main>
+
+    <footer>
+      &copy; Pravesh Chand @ 2022
+      <div class="socialmedia">
+        <a href="https://www.facebook.com/"
+          ><span class="material-icons"
+            ><i class="fa-brands fa-facebook"></i></span
+        ></a>
+        <a href="https://www.twitter.com/"
+          ><span class="material-icons"
+            ><i class="fa-brands fa-twitter"></i></span
+        ></a>
+        <a href="https://www.tiktok.com/"
+          ><span class="material-icons"
+            ><i class="fa-brands fa-tiktok"></i></span
+        ></a>
+        <a href="https://www.instagram.com/"
+          ><span class="material-icons"
+            ><i class="fa-brands fa-instagram"></i></span
+        ></a>
+      </div>
+    </footer>
+
+    <button id="backToTop">
+      <span class="material-icons">arrow_upward</span>
+    </button>
+
+    <script
+      src="https://kit.fontawesome.com/7e3647bae7.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
